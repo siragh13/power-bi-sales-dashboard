@@ -1,4 +1,4 @@
-\# Data Cleaning
+# Data Cleaning
 
 
 
@@ -6,37 +6,37 @@ After reviewing the raw NorthStar Electronics sales data, I cleaned the dataset 
 
 
 
-\## Cleaning Steps
+## Cleaning Steps
 
 
 
-\- Removed duplicate transactions using Order\_ID while keeping one valid copy of each transaction.
+- Removed duplicate transactions using Order_ID while keeping one valid copy of each transaction.
 
-\- Checked Order\_ID for missing values.
+- Checked Order_ID for missing values.
 
-\- Trimmed text columns to remove unnecessary leading or trailing spaces.
+- Trimmed text columns to remove unnecessary leading or trailing spaces.
 
-\- Standardized inconsistent capitalization in text columns such as Category, Sales Channel, and other text fields where needed.
+- Standardized inconsistent capitalization in text columns such as Category, Sales Channel, and other text fields where needed.
 
-\- Kept repeated Product values because the same product can appear in different valid customer transactions.
+- Kept repeated Product values because the same product can appear in different valid customer transactions.
 
-\- Filtered Quantity to keep values greater than 0.
+- Filtered Quantity to keep values greater than 0.
 
-\- Filtered Unit Price to keep values greater than 0.
+- Filtered Unit Price to keep values greater than 0.
 
-\- Filtered Unit Cost to keep values greater than 0.
+- Filtered Unit Cost to keep values greater than 0.
 
-\- Reviewed the Order Date range. The earliest transaction date was January 1, 2025, and the latest was August 15, 2026.
+- Reviewed the Order Date range. The earliest transaction date was January 1, 2025, and the latest was August 15, 2026.
 
-\- Inspected Product and other text fields for blanks and inconsistent values instead of automatically removing repeated values.
-
-
-
-\## What I Learned
+- Inspected Product and other text fields for blanks and inconsistent values instead of automatically removing repeated values.
 
 
 
-One important thing I learned is that a duplicate value in one column does not automatically mean the row is a duplicate transaction. For example, Product names should repeat because different customers can purchase the same product. Order\_ID is the better field for identifying duplicate transactions in this dataset.
+## What I Learned
+
+
+
+One important thing I learned is that a duplicate value in one column does not automatically mean the row is a duplicate transaction. For example, Product names should repeat because different customers can purchase the same product. Order_ID is the better field for identifying duplicate transactions in this dataset.
 
 
 

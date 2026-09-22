@@ -1,8 +1,8 @@
-\# NorthStar Electronics Data Assessment
+# NorthStar Electronics Data Assessment
 
 
 
-\## Project Context
+## Project Context
 
 
 
@@ -14,11 +14,11 @@ Before building the dashboard, I reviewed the raw data to identify issues that c
 
 
 
-\## Initial Data Quality Findings
+## Initial Data Quality Findings
 
 
 
-\### 1. Revenue and Profit Are Not Included
+### 1. Revenue and Profit Are Not Included
 
 
 
@@ -34,7 +34,7 @@ Profit = Revenue - (Quantity × Unit Cost)
 
 
 
-\### 2. Duplicate Transactions
+### 2. Duplicate Transactions
 
 
 
@@ -50,7 +50,7 @@ The duplicate transactions should be removed during data cleaning while keeping 
 
 
 
-\### 3. Missing Values
+### 3. Missing Values
 
 
 
@@ -66,7 +66,7 @@ These missing values need to be investigated and handled appropriately during da
 
 
 
-\### 4. Inconsistent Text Formatting
+### 4. Inconsistent Text Formatting
 
 
 
@@ -78,7 +78,7 @@ These values represent the same business category, so they should be standardize
 
 
 
-\### 5. Leading and Trailing Whitespace
+### 5. Leading and Trailing Whitespace
 
 
 

@@ -1,8 +1,8 @@
-\# Dashboard Development
+# Dashboard Development
 
 
 
-\## Project Goal
+## Project Goal
 
 
 
@@ -14,13 +14,13 @@ The report contains two pages:
 
 
 
-1\. Executive Overview
+1. Executive Overview
 
-2\. Product \& Sales Analysis
+2. Product & Sales Analysis
 
 
 
-\## DAX Measures
+## DAX Measures
 
 
 
@@ -28,7 +28,7 @@ I created measures instead of relying only on the raw dataset because some of th
 
 
 
-\### Total Revenue
+### Total Revenue
 
 
 
@@ -36,11 +36,11 @@ Total Revenue calculates sales revenue using quantity sold and unit price.
 
 
 
-Total Revenue = SUMX(SalesTransactions, SalesTransactions\[Quantity] \* SalesTransactions\[Unit\_Price])
+Total Revenue = SUMX(SalesTransactions, SalesTransactions[Quantity] * SalesTransactions[Unit_Price])
 
 
 
-\### Total Profit
+### Total Profit
 
 
 
@@ -48,11 +48,11 @@ Total Profit calculates the amount remaining after product cost.
 
 
 
-Total Profit = SUMX(SalesTransactions, SalesTransactions\[Quantity] \* (SalesTransactions\[Unit\_Price] - SalesTransactions\[Unit\_Cost]))
+Total Profit = SUMX(SalesTransactions, SalesTransactions[Quantity] * (SalesTransactions[Unit_Price] - SalesTransactions[Unit_Cost]))
 
 
 
-\### Profit Margin
+### Profit Margin
 
 
 
@@ -60,7 +60,7 @@ Profit Margin compares total profit with total revenue.
 
 
 
-\### Total Orders
+### Total Orders
 
 
 
@@ -68,7 +68,7 @@ Total Orders counts unique Order IDs rather than simply counting rows.
 
 
 
-\### Units Sold
+### Units Sold
 
 
 
@@ -76,7 +76,7 @@ Units Sold calculates the total quantity of products sold.
 
 
 
-\## Date Analysis
+## Date Analysis
 
 
 
@@ -88,19 +88,19 @@ The DateTable includes fields such as:
 
 
 
-\- Date
+- Date
 
-\- Month
+- Month
 
-\- Month Number
+- Month Number
 
-\- Quarter
+- Quarter
 
-\- Year
+- Year
 
-\- Year Quarter
+- Year Quarter
 
-\- Year Quarter Sort
+- Year Quarter Sort
 
 
 
@@ -112,7 +112,7 @@ I also created measures for previous-quarter revenue and quarter-over-quarter re
 
 
 
-\## Executive Overview
+## Executive Overview
 
 
 
@@ -120,7 +120,7 @@ The Executive Overview page was designed to answer the question:
 
 
 
-\*\*How is the business performing overall?\*\*
+**How is the business performing overall?**
 
 
 
@@ -132,27 +132,27 @@ It also includes:
 
 
 
-\- Revenue trend by month
+- Revenue trend by month
 
-\- Revenue and profit by category
+- Revenue and profit by category
 
-\- Revenue by region
+- Revenue by region
 
-\- Revenue by sales channel
+- Revenue by sales channel
 
-\- Year Quarter slicer
-
-
-
-\## Product \& Sales Analysis
+- Year Quarter slicer
 
 
 
-The Product \& Sales Analysis page was designed to answer:
+## Product & Sales Analysis
 
 
 
-\*\*What products and sales representatives are driving business performance?\*\*
+The Product & Sales Analysis page was designed to answer:
+
+
+
+**What products and sales representatives are driving business performance?**
 
 
 
@@ -160,17 +160,17 @@ The page includes:
 
 
 
-\- Product-level table showing Units Sold, Total Revenue, and Total Profit
+- Product-level table showing Units Sold, Total Revenue, and Total Profit
 
-\- Revenue by Product ranking
+- Revenue by Product ranking
 
-\- Revenue by Sales Rep treemap
+- Revenue by Sales Rep treemap
 
-\- Revenue and Profit by Sales Rep comparison
+- Revenue and Profit by Sales Rep comparison
 
-\- Revenue vs Units Sold by Product scatter/bubble chart
+- Revenue vs Units Sold by Product scatter/bubble chart
 
-\- Year Quarter and Category slicers
+- Year Quarter and Category slicers
 
 
 
@@ -178,7 +178,7 @@ For the scatter chart, Units Sold is used on the X-axis and Total Revenue on the
 
 
 
-\## Filtering and Interactions
+## Filtering and Interactions
 
 
 
@@ -186,7 +186,7 @@ The report uses slicers and visual interactions so users can explore the data wi
 
 
 
-The Product \& Sales Analysis page can be filtered simultaneously by Year Quarter and Category.
+The Product & Sales Analysis page can be filtered simultaneously by Year Quarter and Category.
 
 
 
@@ -194,7 +194,7 @@ Missing Sales Rep values were kept in the underlying transaction data because th
 
 
 
-\## Report Design
+## Report Design
 
 
 
@@ -206,7 +206,7 @@ Conditional formatting was also used to make important changes and values easier
 
 
 
-\## Validation
+## Validation
 
 
 
@@ -214,15 +214,15 @@ I tested the report by:
 
 
 
-\- Comparing unfiltered dashboard totals with the expected dataset totals
+- Comparing unfiltered dashboard totals with the expected dataset totals
 
-\- Testing Year Quarter and Category slicers together
+- Testing Year Quarter and Category slicers together
 
-\- Testing interactions between visuals
+- Testing interactions between visuals
 
-\- Confirming that sales-representative blank values were excluded only where appropriate
+- Confirming that sales-representative blank values were excluded only where appropriate
 
-\- Confirming that measures and visuals updated correctly when filters changed
+- Confirming that measures and visuals updated correctly when filters changed
 
 
 
@@ -230,9 +230,9 @@ The final unfiltered totals used for validation were:
 
 
 
-\- Units Sold: 8,510
+- Units Sold: 8,510
 
-\- Total Revenue: $2,665,563.86
+- Total Revenue: $2,665,563.86
 
-\- Total Profit: $876,467.86
+- Total Profit: $876,467.86
 
