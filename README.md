@@ -1,4 +1,4 @@
-\# NorthStar Sales Performance Dashboard
+# NorthStar Sales Performance Dashboard
 
 
 
@@ -6,7 +6,7 @@ An interactive Power BI sales analytics project built to transform raw transacti
 
 
 
-\## Project Overview
+## Project Overview
 
 
 
@@ -22,21 +22,21 @@ The finished report contains two interactive pages:
 
 
 
-\- \*\*Executive Overview\*\* — overall business performance
+- **Executive Overview** — overall business performance
 
-\- \*\*Product \& Sales Analysis\*\* — deeper analysis of products and sales representatives
-
-
-
-\## Dashboard Preview
+- **Product & Sales Analysis** — deeper analysis of products and sales representatives
 
 
 
-\### Executive Overview
+## Dashboard Preview
 
 
 
-!\[Executive Overview](images/executive-overview.png)
+### Executive Overview
+
+
+
+![Executive Overview](images/executive-overview.png)
 
 
 
@@ -44,11 +44,11 @@ Quarter filtering dynamically updates KPIs, trends, and quarter-over-quarter rev
 
 
 
-\### Product \& Sales Analysis
+### Product & Sales Analysis
 
 
 
-!\[Product and Sales Analysis](images/product-sales-analysis.png)
+![Product and Sales Analysis](images/product-sales-analysis.png)
 
 
 
@@ -56,11 +56,11 @@ Product and sales analysis compares revenue, profit, units sold, and sales repre
 
 
 
-\## Dashboard Features
+## Dashboard Features
 
 
 
-\### Executive Overview
+### Executive Overview
 
 
 
@@ -68,29 +68,29 @@ The executive page includes:
 
 
 
-\- Total Revenue
+- Total Revenue
 
-\- Total Profit
+- Total Profit
 
-\- Profit Margin
+- Profit Margin
 
-\- Total Orders
+- Total Orders
 
-\- Quarter-over-quarter revenue change
+- Quarter-over-quarter revenue change
 
-\- Monthly revenue trend
+- Monthly revenue trend
 
-\- Revenue and profit by category
+- Revenue and profit by category
 
-\- Revenue by region
+- Revenue by region
 
-\- Revenue by sales channel
+- Revenue by sales channel
 
-\- Year Quarter filtering
+- Year Quarter filtering
 
 
 
-\### Product \& Sales Analysis
+### Product & Sales Analysis
 
 
 
@@ -98,23 +98,23 @@ The analysis page includes:
 
 
 
-\- Product revenue ranking
+- Product revenue ranking
 
-\- Product-level Units Sold, Revenue, and Profit
+- Product-level Units Sold, Revenue, and Profit
 
-\- Revenue by Sales Rep
+- Revenue by Sales Rep
 
-\- Revenue and Profit comparison by Sales Rep
+- Revenue and Profit comparison by Sales Rep
 
-\- Revenue vs Units Sold product analysis
+- Revenue vs Units Sold product analysis
 
-\- Unit Price represented through bubble size
+- Unit Price represented through bubble size
 
-\- Year Quarter and Category filtering
+- Year Quarter and Category filtering
 
 
 
-\## Data Preparation
+## Data Preparation
 
 
 
@@ -126,21 +126,21 @@ The process included:
 
 
 
-\- Identifying and removing duplicate transactions
+- Identifying and removing duplicate transactions
 
-\- Handling missing values based on their business impact
+- Handling missing values based on their business impact
 
-\- Standardizing inconsistent text formatting
+- Standardizing inconsistent text formatting
 
-\- Removing unnecessary whitespace
+- Removing unnecessary whitespace
 
-\- Validating numeric fields used in financial calculations
+- Validating numeric fields used in financial calculations
 
-\- Preserving valid transactions with missing Sales Rep values
+- Preserving valid transactions with missing Sales Rep values
 
 
 
-\## Data Modeling \& DAX
+## Data Modeling & DAX
 
 
 
@@ -148,19 +148,19 @@ I created a dedicated DateTable for time-based analysis and developed DAX measur
 
 
 
-\- Total Revenue
+- Total Revenue
 
-\- Total Profit
+- Total Profit
 
-\- Profit Margin
+- Profit Margin
 
-\- Total Orders
+- Total Orders
 
-\- Units Sold
+- Units Sold
 
-\- Previous Quarter Revenue
+- Previous Quarter Revenue
 
-\- Quarter Revenue Change
+- Quarter Revenue Change
 
 
 
@@ -168,59 +168,59 @@ Conditional formatting was used to visually distinguish positive and negative qu
 
 
 
-\## Key Insights
+## Key Insights
 
 
 
-\- Computers were the strongest revenue-generating category, contributing substantially more revenue than the other product categories.
+- Computers were the strongest revenue-generating category, contributing substantially more revenue than the other product categories.
 
-\- Desktop Workstation generated the highest product revenue at approximately $562K and the highest product profit at approximately $166K.
+- Desktop Workstation generated the highest product revenue at approximately $562K and the highest product profit at approximately $166K.
 
-\- Higher unit sales did not always result in higher revenue. Higher-priced products such as Desktop Workstation generated more revenue despite selling fewer units than several lower-priced products.
+- Higher unit sales did not always result in higher revenue. Higher-priced products such as Desktop Workstation generated more revenue despite selling fewer units than several lower-priced products.
 
-\- Revenue was distributed fairly evenly between Online and Business sales channels, while Retail contributed a slightly smaller share.
+- Revenue was distributed fairly evenly between Online and Business sales channels, while Retail contributed a slightly smaller share.
 
-\- Overall sales generated approximately $2.67M in revenue and $876K in profit, with a profit margin of about 33%.
-
-
-
-\## Design Decisions
+- Overall sales generated approximately $2.67M in revenue and $876K in profit, with a profit margin of about 33%.
 
 
 
-\- I used separate Executive Overview and Product \& Sales Analysis pages to keep high-level business performance separate from detailed analysis.
-
-\- I used a scatter chart to compare units sold with revenue because high sales volume does not always mean high revenue.
-
-\- I used conditional formatting for quarter-over-quarter revenue change so increases and decreases can be identified quickly.
+## Design Decisions
 
 
 
-\## Tools \& Skills
+- I used separate Executive Overview and Product & Sales Analysis pages to keep high-level business performance separate from detailed analysis.
+
+- I used a scatter chart to compare units sold with revenue because high sales volume does not always mean high revenue.
+
+- I used conditional formatting for quarter-over-quarter revenue change so increases and decreases can be identified quickly.
 
 
 
-\- Power BI Desktop
-
-\- Power Query
-
-\- DAX
-
-\- Data Cleaning
-
-\- Data Modeling
-
-\- Data Visualization
-
-\- Dashboard Design
-
-\- Business Analysis
-
-\- Git \& GitHub
+## Tools & Skills
 
 
 
-\## Project Documentation
+- Power BI Desktop
+
+- Power Query
+
+- DAX
+
+- Data Cleaning
+
+- Data Modeling
+
+- Data Visualization
+
+- Dashboard Design
+
+- Business Analysis
+
+- Git & GitHub
+
+
+
+## Project Documentation
 
 
 
@@ -228,15 +228,15 @@ Additional documentation is available in the `docs` folder:
 
 
 
-\- `data-assessment.md` — initial review of the raw dataset
+- `data-assessment.md` — initial review of the raw dataset
 
-\- `data-cleaning.md` — data-cleaning decisions and process
+- `data-cleaning.md` — data-cleaning decisions and process
 
-\- `dashboard-development.md` — DAX, report development, design decisions, interactions, and validation
+- `dashboard-development.md` — DAX, report development, design decisions, interactions, and validation
 
 
 
-\## Validation
+## Validation
 
 
 
@@ -248,15 +248,15 @@ Final unfiltered results:
 
 
 
-\- \*\*Units Sold:\*\* 8,510
+- **Units Sold:** 8,510
 
-\- \*\*Total Revenue:\*\* $2,665,563.86
+- **Total Revenue:** $2,665,563.86
 
-\- \*\*Total Profit:\*\* $876,467.86
+- **Total Profit:** $876,467.86
 
 
 
-\## Repository Structure
+## Repository Structure
 
 
 
@@ -274,7 +274,7 @@ power-bi-sales-dashboard/
 
 │   └── dashboard-development.md
 
-├── NorthStar\_Sales\_Dashboard.pbix
+├── NorthStar_Sales_Dashboard.pbix
 
 └── README.md
 
